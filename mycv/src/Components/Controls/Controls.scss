@@ -1,0 +1,15 @@
+.Controls {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgb(191, 77, 77);
+
+    button {
+        padding: 0.5vw 1.5vw;
+        background: rgb(82, 250, 180);
+        cursor: pointer;
+        font-size: 2vw;
+        -webkit-text-stroke: 0.01vw #000;
+        color: rgb(142, 120, 120);
+    }
+}

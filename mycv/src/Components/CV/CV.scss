@@ -1,0 +1,116 @@
+@import '../../Variables.scss';
+
+.CV {
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #DFF1F5;
+
+    .personalInfo {
+        position: relative;
+        width: 20vw;
+        // background: #e39048;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .imgBx {
+            position: relative;
+            width: 15vw;
+            height: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover .border {
+                transform: rotate(90deg);
+            }
+
+            .border {
+                position: absolute;
+                width: 110%;
+                height: 110%;
+                border-radius: 50%;
+                border-right: 1px solid transparent;
+                border-bottom: 0.25vw dashed rgb(201, 199, 199);
+                border-left: 1px solid transparent;
+                border-top: 0.25vw dashed rgb(201, 199, 199);
+                transform: rotate(45deg);
+                transition: 0.5s;
+            }
+        }
+
+        .fullNameBx {
+            position: relative;
+            width: 100%;
+            margin-top: 3vw;
+
+            input[type="text"],
+            h2 {
+                font-size: 2vw;
+            }
+        }
+
+        .jobName {
+            position: relative;
+            width: 80%;
+
+            input[type="text"],
+            h2 {
+                font-size: 1.5vw;
+                padding-top: 0.2vw;
+                padding-bottom: 0.2vw;
+            }
+
+            margin-top: 3vw;
+        }
+
+        .info {
+            position: relative;
+            width: 87%;
+            margin-top: 3vw;
+            padding: 2vw 1vw;
+            border: 0.3vw dashed $DarkColor;
+            border-radius: 1vw;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+
+            .li {
+                position: relative;
+                width: 90%;
+                margin-bottom: 1vw;
+                // display: flex;
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                input[type="text"],
+                h2 {
+                    position: relative;
+                    font-size: 1.2vw;
+                    padding-top: 0.5vw;
+                    padding-bottom: 0.5vw;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .icon {
+                    position: relative;
+                    min-width: 1.5vw;
+                    max-width: 1.5vw;
+                    // height: 2vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0.5vw;
+                }
+            }
+        }
+    }
+}

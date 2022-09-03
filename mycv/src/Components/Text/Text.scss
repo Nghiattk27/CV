@@ -1,0 +1,25 @@
+@import '../../Variables.scss';
+
+.FullName {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    textarea,
+    input,
+    h2 {
+        position: relative;
+        word-wrap: break-word;
+        width: 100%;
+        color: $DarkColor;
+        -webkit-text-stroke: 0.05vw $DarkColor;
+        text-shadow: 0 0 $DarkColor;
+        margin: 0;
+        padding: 0.02vw 3%;
+        resize: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
